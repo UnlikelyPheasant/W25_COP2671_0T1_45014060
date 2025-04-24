@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
@@ -82,7 +81,6 @@ public class GameManager : MonoBehaviour
         resumeButton.gameObject.SetActive(true);
     }
 
-
     public void ResumeGame()
     {
         isGameActive = true;
@@ -95,8 +93,6 @@ public class GameManager : MonoBehaviour
             spawnCoroutine = StartCoroutine(SpawnTarget());
         }
     }
-
-
 
     public void StartGame(int difficulty)
     {
@@ -111,5 +107,4 @@ public class GameManager : MonoBehaviour
         UpdateScore(0);
         titleScreen.SetActive(false);
     }
-
 }

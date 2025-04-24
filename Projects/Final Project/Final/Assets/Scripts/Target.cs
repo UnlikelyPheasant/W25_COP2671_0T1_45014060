@@ -56,10 +56,8 @@ public class Target : MonoBehaviour
             audioManager.PlayClickClip();
 
             gameManager.UpdateScore(pointValue);
-
         }
     }
-
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
